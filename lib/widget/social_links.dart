@@ -29,13 +29,9 @@ class SocialLinks extends StatelessWidget {
                 icon: Image.network(
                   e.value,
                   color: appProvider.isDark ? Colors.white : Colors.black,
-                  height: Responsive.isMobile(context)
-                      ? AppDimensions.normalize(10)
-                      : null,
+                  height: 70,
                 ),
-                iconSize: Responsive.isMobile(context)
-                    ? AppDimensions.normalize(10)
-                    : AppDimensions.normalize(15),
+                iconSize: 70,
                 onPressed: () => openURL(
                   StaticUtils.socialLinks[e.key],
                 ),
